@@ -14,3 +14,5 @@ proc/*log*
 proc/proc*
 procSit/*log*
 procSit/proc*
+
+.viminfo
