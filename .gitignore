@@ -10,5 +10,7 @@ gribGs/
 gtgn/
 
 *log*
-proc*
-
+proc/*log*
+proc/proc*
+procSit/*log*
+procSit/proc*
