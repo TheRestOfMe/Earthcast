@@ -1,0 +1,9 @@
+* * * * * cd $HOME/proc; ./findnew.sh $HOME/data/bci CLDTOP >> $HOME/proc/fn_CLDTOP_log.txt 2>&1
+* * * * * cd $HOME/proc; ./doTurb.sh $HOME/data/bci GTGTURB >> $HOME/proc/fn_GTGTURB_log.txt 2>&1
+* * * * * cd $HOME/proc; ./doRefc.sh $HOME/data/fltaware REFC >> $HOME/proc/doRefc_log.txt 2>&1
+
+# clean up data dirs
+10 8 * * *    find $HOME/data/bci -type f -mtime +1 -exec rm {} \;
+15 8 * * *    find $HOME/data/DeltaEdr -type d -mtime +1 -exec rm -rf {} \;
+20 8 * * *    find $HOME/data/fltaware -type f -mtime +1 -exec rm {} \;
+25 8 * * *    find $HOME/data/gtg3_fcst -type f -mtime +1 -exec rm {} \;

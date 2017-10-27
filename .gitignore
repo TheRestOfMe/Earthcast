@@ -1,0 +1,14 @@
+data/
+test/
+tmp/
+bigsql/
+datamash-1.1.0/
+ecdata/
+gdal/
+#       geoserver/
+gribGs/
+gtgn/
+
+*log*
+proc*
+
